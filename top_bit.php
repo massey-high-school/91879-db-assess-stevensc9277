@@ -40,5 +40,9 @@
         
         
         <div class="box side">
-            Side Bar goes here
+            
+            <h2>Search  |   <a class="side"href="show_all.php">Show All</a></h2>
+            
+            
+            
         </div>
