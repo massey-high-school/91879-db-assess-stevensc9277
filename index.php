@@ -39,13 +39,7 @@
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
-        <div class="box nav">
-            <a href="index.html">Home</a> | 
-            <a href="page1.html">Page 1</a> | 
-            <a href="page2.html">Page 2</a> | 
-            <a href="page3.html">Page 3</a> | 
-            <a href="contact.html">Contact</a>
-        </div>    <!-- / nav -->        
+            
         
         
         <div class="box side">
