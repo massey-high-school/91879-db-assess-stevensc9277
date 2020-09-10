@@ -35,11 +35,11 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #dd5755;  /* indian red */
+    background-color: #809cc6;  /* cerulean frost */
 }
 
 /* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
+.logo, .banner, .footer {
     color: #fff;
 }
 
@@ -60,12 +60,13 @@ body {
 
 .side {
     grid-area: side;
-    background-color: #f4963e; /* deep saffron */
+    background-color: #c2f2ff; /* blizzard blue */
+    color: #000;
 }
 
 .main {
     grid-area: main;
-    background-color: #dd5755;  /* indian red */
+    background-color: #89bbfe;  /* french sky blue */
     border: solid 1px #CCC;
 }
 
