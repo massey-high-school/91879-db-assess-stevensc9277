@@ -37,9 +37,6 @@
             
             <h1>Stevens Diner</h1>
         </div>    <!-- / banner -->
-
-        <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
-            
         
         
         <div class="box side">
