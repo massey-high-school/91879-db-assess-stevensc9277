@@ -35,7 +35,7 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #99201e;  /* ruby red */
+    background-color: #dd5755;  /* indian red */
 }
 
 /* Set font on dark areas to white */
@@ -56,11 +56,11 @@ body {
 }
 
 
-}
+
 
 .side {
     grid-area: side;
-    background-color: #333;
+    background-color: #f4963e; /* deep saffron */
 }
 
 .main {
