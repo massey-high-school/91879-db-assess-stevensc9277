@@ -33,11 +33,11 @@ LIMIT 0 , 30";
                 <!-- Results go here -->
             <div class="results">
             
-                <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span></p>
+                <p>Title: <span class="sub_heading"><?php echo $showall_rs['Food']; ?></span></p>
                 
-                <p>Author: <span class="sub_heading"><?php echo $showall_rs['Author']; ?></span></p>
+                <p>Author: <span class="sub_heading"><?php echo $showall_rs['Time']; ?></span></p>
                 
-                <p>Genre: <span class="sub_heading"><?php echo $showall_rs['Genre']; ?></span></p>
+                <p>Genre: <span class="sub_heading"><?php echo $showall_rs['Location']; ?></span></p>
                 
                 <p>Rating: <span class="sub_heading">
                     
