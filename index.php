@@ -1,6 +1,7 @@
 <?php
-    include "top_bit.php";
-?>
+include "topbit.php";
+    ?>
+        
         <div class="box main">
             <h2>First Page heading</h2>
             
@@ -13,7 +14,7 @@
         
 
         <div class="box footer">
-            CC Stevens 2020
+            CC Stevens 20XX
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->

@@ -40,9 +40,5 @@
         
         
         <div class="box side">
-            
-            <h2>Search  |   <a class="side"href="show_all.php">Show All</a></h2>
-            
-            
-            
+            <h2>Search | <a class="side"href="show_all.php">Show All</a></h2>
         </div>
