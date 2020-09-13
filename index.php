@@ -3,10 +3,17 @@ include "topbit.php";
     ?>
         
         <div class="box main">
-            <h2>First Page heading</h2>
+            <h2>Welcome</h2>
             
             <p>
-                Sugar plum powder dessert bonbon powder lollipop lollipop muffin I love. Tiramisu dessert I love sugar plum apple pie marzipan chocolate bar brownie. Pudding tiramisu caramels biscuit tiramisu. I love gummies gummies pie sweet pudding I love I love. Donut halvah candy oat cake donut. Caramels wafer danish jelly-o.
+
+Reading is one of life's simple pleasures. Please search the database by using the tools in the side bar. Hopefully you will find something that appeals.
+
+I must confess to having a dislike of vegetarian foods so many of the foods that I have reviewed are not that. The plan is to add more reviews to this site as time allows.
+
+If you'd like to suggest a food for review, please feel free to get in touch.
+
+---
             </p>
             
            
