@@ -1,8 +1,8 @@
 <?php
     include "topbit.php";
     $showall_sql="SELECT *
-FROM `91879_book_reviews`
-ORDER BY `91879_book_reviews`.`Title` ASC";
+FROM `91879_food_review`
+LIMIT 0 , 30";
     $showall_query=mysqli_query($dbconnect, $showall_sql);
     $showall_rs=mysqli_fetch_assoc($showall_query);
     $count=mysqli_num_rows($showall_query);
