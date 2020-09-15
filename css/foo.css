@@ -53,6 +53,7 @@ body {
 
 .banner {
     grid-area: banner;
+    border-radius: 25px;
 }
 
 
@@ -62,12 +63,14 @@ body {
     grid-area: side;
     background-color: #c2f2ff; /* blizzard blue */
     color: #000;
+    border-radius: 25px;
 }
 
 .main {
     grid-area: main;
     background-color: #89bbfe;  /* french sky blue */
     border: solid 1px #CCC;
+    border-radius: 25px;
 }
 
 
