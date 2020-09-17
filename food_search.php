@@ -2,6 +2,7 @@
     include "topbit.php";
     $showall_sql="SELECT *
 FROM `91879_food_review`
+WHERE `Food` LIKE '%fname%'
 LIMIT 0 , 30";
     $showall_query=mysqli_query($dbconnect, $showall_sql);
     $showall_rs=mysqli_fetch_assoc($showall_query);
