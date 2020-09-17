@@ -123,7 +123,11 @@ a:hover{color: #000;}    /* Black*/
     font-weight: bold;
 }
 
-
+.results {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 
 
