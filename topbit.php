@@ -58,5 +58,6 @@
         <div class="box side">
             <h2>Search | <a class="side"href="show_all.php">Show All</a></h2>
             <form method="post" action="food_search.php" type="text" name="food" size="40" value required placeholder="Food search..."> 
-            <input class="submit" name="find_food" value=""></form>
+            <input class="submit" name="find_food" value="">
+            <input type="submit" value="Submit"></form>
         </div>
