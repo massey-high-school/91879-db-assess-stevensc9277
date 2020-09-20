@@ -1,12 +1,20 @@
 <?php
     include "topbit.php";
-    $showall_sql="SELECT *
+
+// if find button pushed...
+if(isset($_POST['find_food']))
+    
+{
+
+$food = test_input(mysqli_real_escape_string($dbconnect, $_POST['food']));
+    
+    $find_sql="SELECT *
 FROM `91879_food_review`
-WHERE `Food` LIKE '%chick%'
+WHERE `Food` LIKE '%$food%'
 LIMIT 0 , 30";
-    $showall_query=mysqli_query($dbconnect, $showall_sql);
-    $showall_rs=mysqli_fetch_assoc($showall_query);
-    $count=mysqli_num_rows($showall_query);
+    $find_query=mysqli_query($dbconnect, $find_sql);
+    $find_rs=mysqli_fetch_assoc($find_query);
+    $count=mysqli_num_rows($find_query);
 
 ?>
         <div class="box main">
@@ -34,16 +42,16 @@ LIMIT 0 , 30";
                 <!-- Results go here -->
             <div class="results">
             
-                <p>Food: <span class="sub_heading"><?php echo $showall_rs['Food']; ?></span></p>
+                <p>Food: <span class="sub_heading"><?php echo $find_rs['Food']; ?></span></p>
                 
-                <p>Time: <span class="sub_heading"><?php echo $showall_rs['Time']; ?></span></p>
+                <p>Time: <span class="sub_heading"><?php echo $find_rs['Time']; ?></span></p>
                 
-                <p>Location: <span class="sub_heading"><?php echo $showall_rs['Location']; ?></span></p>
+                <p>Location: <span class="sub_heading"><?php echo $find_rs['Location']; ?></span></p>
                 
                 <p>Rating: <span class="sub_heading">
                     
                     <?php 
-                    for($x=0; $x < $showall_rs['Rating']; $x++)
+                    for($x=0; $x < $find_rs['Rating']; $x++)
                         
                     {
                        echo "&#9733"; 
@@ -56,7 +64,7 @@ LIMIT 0 , 30";
                 Review / Response
                 </p>
                 
-                <p><span class="sub_heading"><?php echo $showall_rs['Review']; ?></span></p>
+                <p><span class="sub_heading"><?php echo $find_rs['Review']; ?></span></p>
                 
             </div> <!-- / end results div -->
             <br />
@@ -64,10 +72,10 @@ LIMIT 0 , 30";
                 
                  <?php   
                 } // end of 'do'
-                while($showall_rs=mysqli_fetch_assoc($showall_query));
+                while($find_rs=mysqli_fetch_assoc($find_query));
             } //end else
             // if there are results display them
-            
+}
             ?>
             </div>
             
