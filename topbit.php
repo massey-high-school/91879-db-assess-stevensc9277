@@ -57,7 +57,25 @@
         
         <div class="box side">
             <h2>Search | <a class="side"href="show_all.php">Show All</a></h2>
+            
             <form method="post" action="food_search.php" enctype="multipart/form-data"> 
-                <input class="search" type="text" name="food" size="40" value="" required placeholder="Food...">
+                <input class="search" type="text" name="food" size="20" value="" required placeholder="Food...">
             <input class="submit" type="submit" name="find_food" value="&#xf002;" /></form>
+            
+            <form method="post" action="time_search.php"enctype="multipart/form-data">
+                <select name="time" required>
+                    
+	           <option value="" disabled selected>Time...</option>
+                    
+                <option value="Breakfast">Breakfast</option>
+                
+                <option value="Dessert">Dessert</option>
+                    
+                <option value="Dinner">Dinner</option>
+                
+                <option value="Lunch">Lunch</option>
+                </select>
+                
+            <input class="submit" type="submit" name="find_time" value="&#xf002;" />  
+            </form>   
         </div>
