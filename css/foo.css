@@ -116,6 +116,27 @@ a:hover{color: #000;}    /* Black*/
     text-align: center;
 }
 
+form {    
+    width: 250px;
+    margin: 5px;
+}
+
+/* Error box formatting */
+.error {
+    background-color: #ffe0ed; /* pale pink */ 
+    border: 2px solid #8a1737; /* dark red border */
+    color: #8a1737; /* dark red */
+    border-radius: 5px; 
+    padding: 20px;
+}
+
+.search {
+    width: 150px;
+    padding: 8px 15px;
+    background: #fff;  /* white */
+    color: #000;
+}
+
 /* Sub Heading Formatting */
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
@@ -130,8 +151,32 @@ a:hover{color: #000;}    /* Black*/
     background-color: #adefff;  /* blizzard blue */
 }
 
+.submit {
+    font-family: FontAwesome;
+    position: relative;
+    width: 45px;
+    left: -1px;
+    background-color: #636363;  /* ash grey */
+    color: #d6d6d6; /* very light grey */
+    border: 1px solid #636363;  /* ash grey */
+    border-radius: 0 5px 5px 0;
+}
 
+input {
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;  /* light grey */
+    box-sizing: border-box;
+}
 
+select {
+    outline: 0;
+    height: 40px;
+    border: 1px solid #ccc; /* light grey */
+    color: #878787;  /* grey */
+    width: 150px;
+}
 
 
 

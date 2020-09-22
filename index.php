@@ -22,4 +22,6 @@ If you'd like to suggest a food for review, please feel free to get in touch.
         </div>    <!-- / main -->
         
 
-   
+<?php
+include "bottombit.php";
+    ?>

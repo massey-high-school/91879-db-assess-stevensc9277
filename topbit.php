@@ -29,7 +29,7 @@
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
-    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/foo.css"> 
     
@@ -58,16 +58,20 @@
         <div class="box side">
             <h2>Search | <a class="side"href="show_all.php">Show All</a></h2>
             
+            <!-- food search -->
             <form method="post" action="food_search.php" enctype="multipart/form-data"> 
                 <input class="search" type="text" name="food" size="20" value="" required placeholder="Food...">
             <input class="submit" type="submit" name="find_food" value="&#xf002;" /></form>
             
+            <!-- end of food search -->
+            
+            <!-- Start of time search -->
             <form method="post" action="time_search.php"enctype="multipart/form-data">
                 <select name="time" required>
                     
 	           <option value="" disabled selected>Time...</option>
                     
-                <option value="Breakfast">Breakfast</option>
+               <option value="Breakfast">Breakfast</option>
                 
                 <option value="Dessert">Dessert</option>
                     
@@ -78,4 +82,30 @@
                 
             <input class="submit" type="submit" name="find_time" value="&#xf002;" />  
             </form>   
+            
+            <!-- end of time search -->
+            
+            <!-- Start of location search -->
+             <form method="post" action="location_search.php"enctype="multipart/form-data">
+                <select name="location" required>
+                    
+	           <option value="" disabled selected>Location...</option>
+                    
+               <option value="Home">Home</option>
+                
+                <option value="Tascas">Tascas</option>
+                    
+                <option value="St Pierres">St Pierres</option>
+                
+                <option value="Ephesus Turkish Kitchen">Ephesus Turkish Kitchen</option>
+                    
+                <option value="Subway">Subway</option>
+                    
+                <option value="Sushi Ya">Sushi Ya</option>
+                </select>
+                
+            <input class="submit" type="submit" name="find_location" value="&#xf002;" />  
+            </form>
+            
+            <!-- end of location search -->
         </div>
