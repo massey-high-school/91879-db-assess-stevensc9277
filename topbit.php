@@ -108,4 +108,34 @@
             </form>
             
             <!-- end of location search -->
+            
+            <!-- Start of ratings here -->
+            <form method="post" action="rating_search.php" enctype="multipart/form-data">
+            
+                <select class="half_width" name="amount">
+                    
+                    <option value="more" selected>At least...</option>
+                    
+                    <option value="less" selected>At most...</option>
+                    
+                     <option value="exactly" selected>Exactly...</option>
+                    
+                </select>
+                
+                <select class="half_width" name="stars">
+                    <option value=1>&#9733;</option>
+                    
+                    <option value=2>&#9733; &#9733;</option>
+                    
+                    <option value=3>&#9733; &#9733; &#9733;</option>
+                    
+                    <option value=4>&#9733; &#9733; &#9733; &#9733;</option>
+                    
+                    <option value=5>&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+                
+                </select>
+                
+                    <input class="submit" type="submit" name="find_rating" value="&#xf002;" />
+                
+            <!-- End of ratings search here -->
         </div>
