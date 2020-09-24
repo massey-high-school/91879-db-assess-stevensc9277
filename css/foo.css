@@ -178,7 +178,9 @@ select {
     width: 150px;
 }
 
-
+.half_width {
+    width: 74px;
+}
 
 
 

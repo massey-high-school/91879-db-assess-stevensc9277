@@ -138,4 +138,21 @@
                     <input class="submit" type="submit" name="find_rating" value="&#xf002;" />
                 
             <!-- End of ratings search here -->
+            <br/>
+            <!-- Ask if the user prefers vegetarian food -->
+                <p>Are you vegetarian?</p>
+            <form method="post" action="vegen_search.php"enctype="multipart/form-data">
+                <select name="Vegetarian" required>
+                    
+	           <option value="" disabled selected>Vegetarian...</option>
+                    
+               <option value="yes">Yes</option>
+                
+                <option value="no">No</option>
+                    
+            
+                
+            <input class="submit" type="submit" name="find_location" value="&#xf002;" />  
+            </form>
+                
         </div>
