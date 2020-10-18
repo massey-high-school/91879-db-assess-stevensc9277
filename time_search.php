@@ -44,6 +44,8 @@ LIMIT 0 , 30";
             
                 <p>Food: <span class="sub_heading"><?php echo $find_rs['Food']; ?></span></p>
                 
+                <p>Vegeterian: <span class="sub_heading"><?php echo $find_rs['Vegen']; ?></span></p>
+                
                 <p>Time: <span class="sub_heading"><?php echo $find_rs['Time']; ?></span></p>
                 
                 <p>Location: <span class="sub_heading"><?php echo $find_rs['Location']; ?></span></p>

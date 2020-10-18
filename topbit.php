@@ -58,13 +58,18 @@
         <div class="box side">
             <h2>Search | <a class="side"href="show_all.php">Show All</a></h2>
             
+            <i>Type part of the dish name if desired</i>
+        <hr />
+            
             <!-- food search -->
             <form method="post" action="food_search.php" enctype="multipart/form-data"> 
                 <input class="search" type="text" name="food" size="20" value="" required placeholder="Food...">
             <input class="submit" type="submit" name="find_food" value="&#xf002;" /></form>
             
             <!-- end of food search -->
-            
+            <p></p>
+            <i>Search for specific details of the dish</i>
+            <hr />
             <!-- Start of time search -->
             <form method="post" action="time_search.php"enctype="multipart/form-data">
                 <select name="time" required>
@@ -109,6 +114,22 @@
             
             <!-- end of location search -->
             
+            <!-- Start of vegetarian search -->
+            <form method="post" action="vegen_search.php"enctype="multipart/form-data">
+                <select name="vegen" required>
+                    
+                   <option value="" disabled selected>Vegetarian...</option>
+
+                   <option value="yes">Yes</option>
+
+                    <option value="no">No</option>
+                    
+                </select>
+            <input class="submit" type="submit" name="find_vegen" value="&#xf002;" /> 
+            </form>
+                    
+            <!-- End of vegen search here -->
+    <p></p>
             <!-- Start of ratings here -->
             <form method="post" action="rating_search.php" enctype="multipart/form-data">
             
@@ -137,22 +158,7 @@
                 
                     <input class="submit" type="submit" name="find_rating" value="&#xf002;" />
                 
-            <!-- End of ratings search here -->
-            <br/>
-            <!-- Ask if the user prefers vegetarian food -->
-                <p>Are you vegetarian?</p>
-            <form method="post" action="vegen_search.php"enctype="multipart/form-data">
-                <select name="Vegetarian" required>
-                    
-	           <option value="" disabled selected>Vegetarian...</option>
-                    
-               <option value="yes">Yes</option>
-                
-                <option value="no">No</option>
-                    
-            
-                
-            <input class="submit" type="submit" name="find_location" value="&#xf002;" />  
+            <!-- End of ratings search here --> 
             </form>
                 
         </div>

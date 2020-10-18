@@ -2,23 +2,24 @@
     include "topbit.php";
 
 // if find button pushed...
-if(isset($_POST['find_location']))
+if(isset($_POST['find_vegen']))
     
 {
 
-$location = test_input(mysqli_real_escape_string($dbconnect, $_POST['location']));
+$vegen = test_input(mysqli_real_escape_string($dbconnect, $_POST['vegen']));
     
     $find_sql="SELECT *
 FROM `91879_food_review`
-WHERE `Location` LIKE '%$location%'
-LIMIT 0 , 30";
+WHERE `Vegen` LIKE '%$vegen%'
+LIMIT 0 , 30";  
+
     $find_query=mysqli_query($dbconnect, $find_sql);
     $find_rs=mysqli_fetch_assoc($find_query);
     $count=mysqli_num_rows($find_query);
 
 ?>
         <div class="box main">
-            <h2>Location Search</h2>
+            <h2>Vegetarian search</h2>
           <?php
             
             // check if there are any results

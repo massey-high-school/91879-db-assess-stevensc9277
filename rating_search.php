@@ -13,7 +13,7 @@ if ($amount=="exactly")
 {
     $find_sql="SELECT *
 FROM `91879_food_review`
-WHERE `Rating` = $stars
+WHERE `Rating` =$stars
 LIMIT 0 , 30";  
 }
   
@@ -40,7 +40,7 @@ LIMIT 0 , 30";
 
 ?>
         <div class="box main">
-            <h2>Time Search</h2>
+            <h2>Rating Search</h2>
           <?php
             
             // check if there are any results
@@ -65,6 +65,8 @@ LIMIT 0 , 30";
             <div class="results">
             
                 <p>Food: <span class="sub_heading"><?php echo $find_rs['Food']; ?></span></p>
+                
+                <p>Vegeterian: <span class="sub_heading"><?php echo $find_rs['Vegen']; ?></span></p>
                 
                 <p>Time: <span class="sub_heading"><?php echo $find_rs['Time']; ?></span></p>
                 
